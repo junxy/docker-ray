@@ -11,6 +11,6 @@ jobs:
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
         name: junxy/v2ray
-        username: ${{ secrets.DOCKER_USERNAME }}
+        username: ${{ secrets.GITHUB_ACTOR }}
         password: ${{ secrets.GITHUB_TOKEN }}
         registry: docker.pkg.github.com
