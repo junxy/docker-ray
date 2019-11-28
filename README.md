@@ -1,6 +1,6 @@
 # docker-ray
 
-> 由于官方维护的docker镜像停止了更新，创建此更新．
+> 由于[官方维护](https://hub.docker.com/r/v2ray/official)的docker镜像停止了更新，创建此更新．
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/junxy/docker-ray)
 ![MicroBadger Size](https://img.shields.io/microbadger/image-size/junxy/v2ray)
