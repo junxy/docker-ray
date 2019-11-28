@@ -33,6 +33,7 @@ RUN set -ex && \
 
 ENV PATH /usr/bin/v2ray:$PATH
 
-# RUN v2ray -version
+# test 
+RUN v2ray -version
 
 CMD ["v2ray", "-config=/etc/v2ray/config.json"]
