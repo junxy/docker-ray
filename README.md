@@ -14,6 +14,10 @@
 docker pull junxy/v2ray
 ```
 
+or
+
+https://github.com/junxy/docker-ray/packages/65576
+
 - 参考官方 `Dockerfile` 制作，目录结构保持不变
     - `/etc/v2ray/config.json`: 配置文件
     - `/usr/bin/v2ray/v2ray`: V2Ray 主程序
