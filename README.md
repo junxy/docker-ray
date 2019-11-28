@@ -20,4 +20,4 @@ docker pull junxy/v2ray
     - `/usr/bin/v2ray/v2ctl`: V2Ray 辅助工具
     - `/usr/bin/v2ray/geoip.dat`: IP 数据文件
     - `/usr/bin/v2ray/geosite.dat`: 域名数据文件
-- 经适当优化，镜像(压缩)大小仅 15M 
+- 经过当优化，镜像(压缩)大小仅 `15M` 
