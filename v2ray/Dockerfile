@@ -12,11 +12,13 @@ RUN apk add --no-cache tzdata ca-certificates \
 
 ARG V2RAYVERSION=4.21.3
 # https://microbadger.com/labels
-ARG VCS_REF=${GitCommit}
+ARG VCS_REF=${VCS_REF}
+ARG VCS_REF2=${VCS_REF2}
 LABEL org.label-schema.vcs-ref=$VCS_REF \
         org.label-schema.vcs-url="https://github.com/junxy/docker-ray"
 
 RUN echo test123${VCS_REF}
+RUN echo test123${VCS_REF2}
 
 # https://install.direct/go.sh 
 # ref: https://github.com/v2ray/ext/blob/master/docker/official/Dockerfile
