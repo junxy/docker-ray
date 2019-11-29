@@ -12,8 +12,8 @@ jobs:
     - name: Publish to Registry
       uses: elgohr/Publish-Docker-Github-Action@master
       env:
-        VCS_REF: ${GITHUB_SHA_SHORT}
-        VCS_REF2: $(echo "${GITHUB_SHA}" | cut -c1-6)
+        VCS_REF: ${env.GITHUB_SHA_SHORT}
+        VCS_REF2: $(echo "${env.GITHUB_SHA}" | cut -c1-6)
       with:
         name: junxy/docker-ray/v2ray
         username: junxy
