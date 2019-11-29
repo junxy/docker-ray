@@ -10,7 +10,7 @@ jobs:
     - name: Publish to Registry
       uses: elgohr/Publish-Docker-Github-Action@master
       env:
-        VCS_REF: `git rev-parse --short HEAD`
+        VCS_REF: "`git rev-parse --short HEAD`"
       with:
         name: junxy/docker-ray/v2ray
         username: junxy

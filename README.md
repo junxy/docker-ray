@@ -2,11 +2,12 @@
 
 > 由于[官方维护](https://hub.docker.com/r/v2ray/official)的 docker 镜像**长时间未更新了**，创建此更新．
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/junxy/docker-ray)
-![MicroBadger Size](https://img.shields.io/microbadger/image-size/junxy/v2ray)
-![MicroBadger Layers](https://img.shields.io/microbadger/layers/junxy/v2ray)
+![GitHub tag (latest SemVer pre-release)](https://img.shields.io/github/v/tag/junxy/docker-ray?label=version)
 ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/junxy/v2ray)
 ![Docker Automated build](https://img.shields.io/docker/cloud/automated/junxy/v2ray)
+
+![MicroBadger Layers](https://img.shields.io/microbadger/layers/junxy/v2ray)
+![MicroBadger Size](https://img.shields.io/microbadger/image-size/junxy/v2ray)
 
 已发布至 Docker Hub：https://hub.docker.com/r/junxy/v2ray
 
