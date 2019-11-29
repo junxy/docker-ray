@@ -12,7 +12,7 @@ RUN apk add --no-cache tzdata ca-certificates \
 
 ARG V2RAYVERSION=4.21.3
 # https://microbadger.com/labels
-ARG VCS_REF=0000000
+ARG VCS_REF=${GitCommit}
 LABEL org.label-schema.vcs-ref=$VCS_REF \
         org.label-schema.vcs-url="https://github.com/junxy/docker-ray"
 
