@@ -11,6 +11,10 @@ RUN apk add --no-cache tzdata ca-certificates \
     && apk del tzdata
 
 ARG V2RAYVERSION=4.21.3
+# https://microbadger.com/labels
+ARG VCS_REF=0000000
+LABEL org.label-schema.vcs-ref=$VCS_REF \
+        org.label-schema.vcs-url="https://github.com/junxy/docker-ray"
 
 # https://install.direct/go.sh 
 # ref: https://github.com/v2ray/ext/blob/master/docker/official/Dockerfile

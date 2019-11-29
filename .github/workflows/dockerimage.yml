@@ -9,9 +9,12 @@ jobs:
     #   run: docker build . --file v2ray/Dockerfile --tag junxy/v2ray:latest
     - name: Publish to Registry
       uses: elgohr/Publish-Docker-Github-Action@master
+      env:
+        VCS_REF: `git rev-parse --short HEAD`
       with:
         name: junxy/docker-ray/v2ray
         username: junxy
         password: ${{ secrets.GITHUB_TOKEN }}
         registry: docker.pkg.github.com
         workdir: v2ray/
+        buildargs: VCS_REF
