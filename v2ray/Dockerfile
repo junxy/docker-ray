@@ -16,6 +16,8 @@ ARG VCS_REF=${GitCommit}
 LABEL org.label-schema.vcs-ref=$VCS_REF \
         org.label-schema.vcs-url="https://github.com/junxy/docker-ray"
 
+RUN echo test123${VCS_REF}
+
 # https://install.direct/go.sh 
 # ref: https://github.com/v2ray/ext/blob/master/docker/official/Dockerfile
 RUN set -ex \ 
