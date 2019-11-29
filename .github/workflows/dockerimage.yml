@@ -14,10 +14,11 @@ jobs:
       env:
         VCS_REF: ${env.GITHUB_SHA_SHORT}
         VCS_REF2: $(echo "${env.GITHUB_SHA}" | cut -c1-6)
+        VCS_REF3: $(git rev-parse --short HEAD)
       with:
         name: junxy/docker-ray/v2ray
         username: junxy
         password: ${{ secrets.GITHUB_TOKEN }}
         registry: docker.pkg.github.com
         workdir: v2ray/
-        buildargs: VCS_REF,VCS_REF2
+        buildargs: VCS_REF,VCS_REF2,VCS_REF3
