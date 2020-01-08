@@ -21,7 +21,7 @@ LABEL org.label-schema.vcs-ref=$VCS_REF \
 RUN echo test123$VCS_REF
 RUN echo test123$VCS_REF2
 RUN echo test123$VCS_REF3
-RUN echo env${env.GITHUB_SHA_SHORT}
+RUN echo ${env.GITHUB_SHA_SHORT}
 
 # https://install.direct/go.sh 
 # ref: https://github.com/v2ray/ext/blob/master/docker/official/Dockerfile
