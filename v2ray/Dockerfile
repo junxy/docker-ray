@@ -10,13 +10,13 @@ RUN apk add --no-cache tzdata ca-certificates \
     && echo "Asia/Taipei" > /etc/timezone \
     && apk del tzdata
 
-ARG V2RAYVERSION=4.21.3
+ARG V2RAYVERSION=4.22.1
 # https://microbadger.com/labels
-ARG VCS_REF=${GitCommit}
+ARG VCS_REF=${VCS_REF}
+ARG VCS_REF2=${VCS_REF2}
+ARG VCS_REF3=${VCS_REF3}
 LABEL org.label-schema.vcs-ref=$VCS_REF \
         org.label-schema.vcs-url="https://github.com/junxy/docker-ray"
-
-RUN echo test123${VCS_REF}
 
 # https://install.direct/go.sh 
 # ref: https://github.com/v2ray/ext/blob/master/docker/official/Dockerfile
