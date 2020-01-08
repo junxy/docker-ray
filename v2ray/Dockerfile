@@ -10,7 +10,7 @@ RUN apk add --no-cache tzdata ca-certificates \
     && echo "Asia/Taipei" > /etc/timezone \
     && apk del tzdata
 
-ARG V2RAYVERSION=4.21.3
+ARG V2RAYVERSION=4.22.1
 # https://microbadger.com/labels
 ARG VCS_REF=${VCS_REF}
 ARG VCS_REF2=${VCS_REF2}
