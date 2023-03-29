@@ -10,7 +10,7 @@ jobs:
     - name: Set env
       run: echo ::set-env name=GITHUB_SHA_SHORT::$(echo $GITHUB_SHA | cut -c 1-6)
     - name: Publish to Registry
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: elgohr/Publish-Docker-Github-Action@v5
       env:
         VCS_REF: ${env.GITHUB_SHA_SHORT}
         VCS_REF2: $(echo "${env.GITHUB_SHA}" | cut -c1-6)
